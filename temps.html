@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastrejador de Temps</title>
+    <link rel="stylesheet" href="temps.css">
+</head>
+<body>
+    <header>
+        <h1>Rastrejador de Temps</h1>
+    </header>
+    <main>
+        <section id="formulari">
+            <h2>Afegeix una activitat</h2>
+            <form id="tempsForm">
+                <label for="data">Dia:</label>
+                <input type="date" id="data" name="data" required>
+
+                <label for="categoria">Categoria:</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="estudis">Estudis</option>
+                    <option value="oci">Oci</option>
+                    <option value="esport">Esport</option>
+                    <option value="altres">Altres</option>
+                </select>
+
+                <label for="temps">Temps dedicat (hh:mm):</label>
+                <input type="time" id="temps" name="temps" required>
+
+                <label for="descripcio">Descripció (opcional):</label>
+                <textarea id="descripcio" name="descripcio" rows="3" placeholder="Exemple: Vaig estudiar matemàtiques..."></textarea>
+
+                <button type="submit">Afegir</button>
+            </form>
+        </section>
+
+        <section id="estadistiques">
+            <h2>Estadístiques setmanals</h2>
+            <div class="grafic">
+                <div class="barra" style="height: 40%;" title="Estudis: 40%"></div>
+                <div class="barra" style="height: 30%;" title="Oci: 30%"></div>
+                <div class="barra" style="height: 20%;" title="Esport: 20%"></div>
+                <div class="barra" style="height: 10%;" title="Altres: 10%"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Rastrejador de Temps</p>
+    </footer>
+</body>
+</html>
