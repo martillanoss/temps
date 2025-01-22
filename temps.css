@@ -97,5 +97,51 @@ form button:hover {
 
 #llistaActivitats li p {
     margin: 0.2rem 0;
-    font-size: 0.9rem
+    font-size: 0.9rem;
+}
+
+/* Secció de les estadístiques */
+#estadistiques {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#estadistiques h2 {
+    margin-bottom: 1rem;
+    color: #4caf50;
+}
+
+#graficsPercentatge {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.percentatge {
+    width: 200px;
+    padding: 1rem;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.percentatge h3 {
+    margin: 0;
+    color: #4caf50;
+    font-size: 1.2rem;
+}
+
+.percentatge p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #666;
 }
