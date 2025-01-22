@@ -25,8 +25,11 @@
                     <option value="altres">Altres</option>
                 </select>
 
-                <label for="temps">Temps dedicat (hh:mm):</label>
-                <input type="time" id="temps" name="temps" required>
+                <label for="hora_inici">Hora d'inici:</label>
+                <input type="time" id="hora_inici" name="hora_inici" required>
+
+                <label for="hora_fi">Hora de fi:</label>
+                <input type="time" id="hora_fi" name="hora_fi" required>
 
                 <label for="descripcio">Descripció (opcional):</label>
                 <textarea id="descripcio" name="descripcio" rows="3" placeholder="Exemple: Vaig estudiar matemàtiques..."></textarea>
@@ -35,18 +38,14 @@
             </form>
         </section>
 
-        <section id="estadistiques">
-            <h2>Estadístiques setmanals</h2>
-            <div class="grafic">
-                <div class="barra" style="height: 40%;" title="Estudis: 40%"></div>
-                <div class="barra" style="height: 30%;" title="Oci: 30%"></div>
-                <div class="barra" style="height: 20%;" title="Esport: 20%"></div>
-                <div class="barra" style="height: 10%;" title="Altres: 10%"></div>
-            </div>
+        <section id="activitats">
+            <h2>Llista d'activitats</h2>
+            <ul id="llistaActivitats"></ul>
         </section>
     </main>
     <footer>
         <p>&copy; 2025 Rastrejador de Temps</p>
     </footer>
+    <script src="temps.js"></script>
 </body>
 </html>
